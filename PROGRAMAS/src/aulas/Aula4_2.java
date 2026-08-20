@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Aula4_2 extends JFrame {
 
@@ -9,11 +10,12 @@ public class Aula4_2 extends JFrame {
     public Aula4_2(){
 
         setTitle("Cadastro de Aluno");
-        setSize(400,250);
+        setSize(250,400);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
         JPanel painel=new JPanel();
+        painel.setLayout(new FlowLayout());
 
         painel.add(new JLabel("Nome:"));
         txtNome=new JTextField(20);
@@ -25,6 +27,17 @@ public class Aula4_2 extends JFrame {
 
         btnSalvar=new JButton("Salvar");
         painel.add(btnSalvar);
+
+        btnSalvar.addActionListener(e->{
+
+            String nome=txtNome.getText();
+            String email=txtEmail.getText();
+
+            JOptionPane.showMessageDialog(
+                this,
+                "Nome: "+nome+"\nE-mail: "+email
+                );
+        });
 
         add(painel);
     }
