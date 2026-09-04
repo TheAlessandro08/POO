@@ -1,4 +1,4 @@
-package Aula5;
+package aulas.Aula5; 
 // É uma regra de erro isolada. Amanhã, ela pode ser usada pela
 // classe ContaBancaria ou Venda sem alterar o código do cliente.
 

@@ -1,4 +1,4 @@
-package aula5;
+package aulas.Aula5; 
 
 import javax.swing.JOptionPane;
 
@@ -65,7 +65,7 @@ public class Cliente extends Pessoa {
             novoLimite, "Sucesso", JOptionPane.INFORMATION_MESSAGE);
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(this, "Erro: Digite apenas " +
-                "números válidos!", "Falha na COnversão", JOptionPane.ERROR_MESSAGE);
+                "números válidos!", "Falha na Conversão", JOptionPane.ERROR_MESSAGE);
         } catch (LimiteInvalidoException e) {
             JOptionPane.showMessageDialog(this, e.getMessage(), "Regra Violada",
             JOptionPane.WARNING_MESSAGE);

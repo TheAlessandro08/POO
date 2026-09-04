@@ -1,4 +1,4 @@
-package Aula5;
+package aulas.Aula5; 
 // Modifica apenas a estrutura humana padrão
 // (pod ser herdada depois por Funcionario,Fornecedor,etc.)
 // classe base com tela base
